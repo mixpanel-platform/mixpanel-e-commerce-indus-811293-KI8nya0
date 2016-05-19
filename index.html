@@ -25,23 +25,23 @@
 			unit: 'month'
 		});
 		query.done(function(results) {
-		console.log(results.values)
-		// 	var words = [];
-		// 	_.each(results.values(), function(vals, word) {
-		// 		var obj = {};
-		// 		obj.text = word;
-		// 		obj.weight = 0;
-		// 		_.each(vals, function(count, date) {
-		// 			obj.weight += count;
-		// 		});
-		// 		words.push(obj);
-		// 	});
-		// 	$('#words').jQCloud(words, {
-		// 	  width: 919,
-		// 	  height: 350,
-		// 	  shape: 'rectangular',
-		// 	  delay: 100
-		// 	});
+		console.log(results.values())
+			var words = [];
+			_.each(results.values(), function(vals, word) {
+				var obj = {};
+				obj.text = word;
+				obj.weight = 0;
+				_.each(vals, function(count, date) {
+					obj.weight += count;
+				});
+				words.push(obj);
+			});
+			$('#words').jQCloud(words, {
+			  width: 919,
+			  height: 350,
+			  shape: 'rectangular',
+			  delay: 100
+			});
 		});
 	</script>
 </body>
